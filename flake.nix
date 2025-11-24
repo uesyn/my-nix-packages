@@ -48,6 +48,8 @@
     {
       formatter = forAllSystems formatterForSystem;
 
+      lib = nixpkgs.lib;
+
       legacyPackages = forAllSystems (
         system:
         packagesForSystem {
